@@ -1,0 +1,110 @@
+.rodape{
+    background: var(--branco);
+    text-align: center;
+    padding: 1em;
+}
+
+.rodape__titulo{
+    font-family: var(--fonte-principal);
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 18px;
+    font-weight: 500;
+}
+.rodape__texto{
+    background: var(--azul-degrade);
+    font-family: var(--fonte-principal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 300;
+    margin: 1em;
+}
+.email{
+    background-color: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+}
+.email::placeholder{
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--azul);
+    background: url("../img/Vector\ \(4\).svg") no-repeat;
+
+}
+hr{
+    margin: 0;
+}
+
+.final{
+    background-color: var(--branco);
+    padding: 1em;
+}
+.final__titulo{
+    font-family: var(--fonte-principal);
+
+}
+.lista-rodapé{
+    display: none;
+}
+@media screen and (min-width:1024px){
+    .rodape{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .email{
+        width: 30%;
+    }
+    .rodape__descrição{
+        margin-right: 1em;
+        width: 30%;
+    }
+    .rodape__titulo{
+        font-size: 24px;
+    }
+    .final{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista-rodapé{
+        display: block;
+    }
+    .lista-rodapé__item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+    .lista-rodapé__link{
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+    .lista-rodapé__título{
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .final__titulo{
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:1728px){
+    .final{
+        padding: 3em 20vw;
+    }
+    .lista-rodapé{
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+    .rodape{
+        padding: 3em 0;
+    }
+}
